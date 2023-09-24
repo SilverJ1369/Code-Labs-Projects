@@ -17,6 +17,8 @@ form {
 	justify-content: center;
 	width: clamp(275px, 50%, 700px);
 	margin: 0 auto;
+
+	transition: 500ms cubic-bezier(0.17, 0.67, 0.35, 1.6) opacity;
 }
 
 .task-input {
@@ -53,10 +55,6 @@ body.focus-form .task-input {
 
 body.focus-form .overlay {
 	opacity: 1;
-}
-
-form {
-	transition: 500ms cubic-bezier(0.17, 0.67, 0.35, 1.6) opacity;
 }
 
 .link-input {
@@ -105,4 +103,14 @@ p {
 .task-list input {
     margin-left: 2%;
     transform: scale(1.25);
+}
+
+.crossout-p {
+	text-decoration: line-through;
+}
+
+.btn-remove {
+	position: absolute;
+    right: 20px;
+	top: 30%;
 }
